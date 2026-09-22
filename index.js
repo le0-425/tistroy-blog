@@ -22,7 +22,7 @@ const parser = new Parser({
 
   try {
   	// ✅ 아래 parseURL("") 안에 본인의 블로그 rss 페이지 주소를 입력
-    const feed = await parser.parseURL("✅ https://le0-425.tistory.com/rss");
+    const feed = await parser.parseURL("https://le0-425.tistory.com/rss");
     const latestPostsCount = 5; // 최신 글을 몇 개 가져올지
 
     for (let i = 0; i < latestPostsCount && i < feed.items.length; i++) {
